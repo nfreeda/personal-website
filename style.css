@@ -1,0 +1,31 @@
+.button {
+    border-radius: 0;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial;
+}
+.button1 {
+    background-color: #ccc;
+    color: black;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.button1:hover {
+    background-color: #a6a6a6;
+    color: black;
+}
+
+a:link{
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited{
+  text-decoration: none;
+  color: #000;
+}
