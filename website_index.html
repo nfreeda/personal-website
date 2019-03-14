@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="website_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="icon" href="http://i66.tinypic.com/23vas9j.png">
+    <meta charset="utf-8">
+    <title>Natalie Tham</title>
+  </head>
+
+  <body>
+    <div class="title-words">
+      <p id="first">NATALIE THAM</p>
+      <p><img id="image-of-me" src="http://i67.tinypic.com/25iadld.jpg" alt="picture of me"></p>
+      <div id="floating-header">
+        <p id="second">I do data stuff</p>
+        <div id="header" class="header">
+          <ul>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#about-me">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- sticky header -->
+    <script type="text/javascript">
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          // Get the header
+          var header = document.getElementById("floating-header");
+          // Get the offset position of the navbar
+          var sticky = header.offsetTop;
+          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+            if (window.pageYOffset > sticky) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+    </script>
+
+
+
+
+    <div class="lower-section">
+      <div class="about-me" id="about-me">
+        <h2 id="subtitle">ABOUT</h2>
+        <p id="content">I have a background in engineering + programming. <br/><br/>I have experience in campaign data + analytics.
+          <br/><br/>I have a passion for using data to get good people elected into public office.
+        <br/>
+        <br/>
+        <br/>
+        I have experience with creating data visualizations, GIS mapping analysis + visualizations,
+        automating & managing data flow, writing code to analyze data, and bringing data-driven insignts to any team I am a part of.
+        </p>
+      </div>
+      <div class="projects" id="projects">
+        <h2 id="subtitle">PROJECTS</h2>
+        <p id="content">hello</p>
+
+        <div class="container">
+          <div class="content">
+            <a href="http://i67.tinypic.com/25iadld.jpg" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="http://i67.tinypic.com/25iadld.jpg">
+              <h3>Media Sentiment Analysis</h3>
+              <div class="content-details fadeIn-bottom">
+                <p class="content-text">Determined sentiment of media reports on the statewide level for candidates prior to elections.</p>
+              </div>
+            </a>
+          </div>
+          <div class="content">
+            <a href="http://i67.tinypic.com/25iadld.jpg" target="_blank">
+              <div class="content-overlay"></div>
+              <img class="content-image" src="http://i67.tinypic.com/25iadld.jpg">
+              <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Project 2</h3>
+                <p class="content-text">This is a short description</p>
+              </div>
+            </a>
+          </div>
+          <div style="clear: both;"></div>
+        </div>
+
+
+      </div>
+      <div class="contact" id="contact">
+        <h2 id="subtitle">CONTACT</h2>
+        <p id="content" style="margin-left: 200px">Please feel free to contact me with any questions!</p>
+      </div>
+    </div>
+  </body>
+</html>
